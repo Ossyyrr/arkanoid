@@ -10,7 +10,9 @@ class PlayArea extends RectangleComponent with HasGameReference<BrickBreaker> {
   PlayArea()
       : super(
           paint: Paint()..color = const Color(0xfff2e8cf),
-          children: [RectangleHitbox()],
+          children: [
+            RectangleHitbox(), // construirá un cuadro de impacto para la detección de colisiones que coincida con el tamaño del componente principal
+          ],
         );
 
   @override

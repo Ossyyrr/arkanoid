@@ -34,7 +34,7 @@ class BrickBreaker extends FlameGame
       case PlayState.welcome:
       case PlayState.gameOver:
       case PlayState.won:
-      // overlays.add(playState.name);
+        overlays.add(playState.name);
       case PlayState.playing:
         overlays.remove(PlayState.welcome.name);
         overlays.remove(PlayState.gameOver.name);

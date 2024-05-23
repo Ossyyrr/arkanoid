@@ -52,6 +52,8 @@ class BrickBreaker extends FlameGame
     world.add(PlayArea());
 
     playState = PlayState.welcome;
+
+    // debugMode = true;
   }
 
   void startGame() {
